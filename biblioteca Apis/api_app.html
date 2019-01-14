@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Apis Mercado Libre</title>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="JS/visual_option.js"></script>
+    <script type="text/javascript" src="JS/background.js"></script>
+    <!-- Popper.js & Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Local-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-lg-7 navbar-dark" style="background-color: #FFE82C;">
+            <h6 class="text-center"><i class="fas fa-book"></i> Biblioteca de API'S</h6>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-md-7">
+                <br>
+                <h6 class="text-center"><i class="fa fa-star" aria-hidden="true"></i> Top Herramientas de Verificación</h6>
+                <br>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-xs-5">
+                            <!--Top Apis-->
+                            <div class="row">
+
+                                <div class="col">
+                                    <img src="Images/liberation.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col">
+                                    <img src="Images/point.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col"> <img src="Images/reputatio.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col"><img src="Images/retenido.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col"><img src="Images/reputatio.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col"><img src="Images/retenido.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col"><img src="Images/retenido.png" class="img-fluid" alt=""></div>
+                                <div class="col"><img src="Images/dominio.png" class="img-fluid" alt=""></div>
+                                <div class="col"><img src="Images/retenido.png" class="img-fluid" alt=""></div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--Listado de Selección de APIS-->
+                <div class="form-group">
+                    <label for="Selecciona el API"></label>
+                    <select class="form-control" name="apis" id="apis">
+                                                <option value="0">LISTADO DE APIS</option>
+                                                <option value="api-1">APLICACIONES</option>
+                                                <option value="api-2">BALANCE</option>
+                                                <option value="api-3">BANCOS ACEPTADOS PARA RETIROS</option>
+                                                <option value="api-4">BLOQUEO POR VISA</option>
+                                                <option value="api-5">CAMPAÑA COMERCIAL</option>
+                                                <option value="api-6">CARRITO PAQUETES EN UNA MISMA ETIQUETA</option>
+                                                <option value="api-7">CATEGORÍAS</option>
+                                                <option value="api-8">CODIGO POSTAL DE MLM</option>
+                                                <option value="api-9">COSTOS DE ENVÍO</option>
+                                                <option value="api-10">CREDIT LEVEL</option>
+                                                <option value="api-11">CUANTAS OFERTAS TIENE UNA SUBASTA</option>
+                                                <option value="api-12">ESHOP</option>
+                                                <option value="api-13">ETIQUETA ML</option>
+                                                <option value="api-14">FORMAS DE ENVÍO POR SITE</option>
+                                                <option value="api-15">ITEM EN B=P</option>
+                                                <option value="api-16">ÍTEMS</option>
+                                                <option value="api-17">LIBERACIÓN DE DINERO</option>
+                                                <option value="api-18">LIMITE MP POINT</option>
+                                                <option value="api-19">MEDIACIONES</option>
+                                                <option value="api-20">MEDIOS DE PAGO ACEPTADOS POR SITE</option>
+                                                <option value="api-21">MÉTODOS ACEPTADOS DE PAGO</option>
+                                                <option value="api-22">MONTOS MÍNIMOS Y MÁXIMOS POR MEDIO DE PAGO</option>
+                                                <option value="api-23">OPERACIONES A LIBERAR</option>
+                                                <option value="api-24">OPERACIONES RETENIDAS POR CHARGEBACKS</option>
+                                                <option value="api-25">OPERACIONES RETENIDAS POR DEVOLUCIÓN EXPRESS</option>
+                                                <option value="api-26">OPINIONES</option>
+                                                <option value="api-27">ORDERS</option>
+                                                <option value="api-28">PREGUNTAS REALIZADAS EN EL ÍTEM</option>
+                                                <option value="api-29">PREGUNTAS SIN RESPONDER</option>
+                                                <option value="api-30">TITULARIDAD DE POINT</option>
+                                                <option value="api-31">USUARIO CONFIABLE</option>
+                                                <option value="api-32">VALIDACIÓN CÓDIGO UNIVERSAL DE PRODUCTO</option>
+                                            </select>
+                </div>
+                <!--Contenedor de selector de apis-->
+                <div id="seleccapis">
+                    <!--1---API-DE-APLICACIONES---------------------------------->
+                    <div id="api-1" class="seccapi">
+                        <div class="card text-left">
+                            <img class="card-img-top" src="holder.js/100px180/" alt="">
+                            <div class="card-body">
+                                <p class="card-title">Api de Aplicaciones</p>
+                                <p class="card-text">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" name="clientid" id="clientid" placeholder="Ingresa Client ID">
+                                    </div>
+                                    <button type="button" id="ejapi-1" class="btn btn-success btn-sm">Ejecutar API</button></p>
+                                <div class="descripcion">
+                                    <div class="descripcion-inn">
+                                        <a href="#" class="accordion-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                                        <div class="description-content">
+                                            <p><b>Funcionamiento:</b>Para ejecutar el API debes ingresar el <b>Client ID</b>, lo obtienes desde: ZEUS > Items</p>
+                                            <p><b>Descripción:</b>Esta API identifica si un cambio dentro de una publicación fue realizada por el user o por una aplicación externa, además de identificar desde dónde fue realizado el cambio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <!--2---API-DE-BALANCE--------------------------------------->
+                    <div id="api-2" class="seccapi">
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                        <div id="descripcion">
+                            <div class="accordion-container">
+                                <a href="#" class="accordion-toggle"><b>Descripción: </b></a>
+                                <div class="description-content">
+                                    Podemos verificar el dinero de la cuenta de cada usuario, ver cuánto tiene disponible, retenido y por qué, en reclamo, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--3---API-DE-BANCOS ACEPTADOS PARA RETIROS----------------->
+                    <div id="api-3" class="seccapi">
+                        <h4 class="text-center">API de BANCOS ACEPTADOS PARA RETIROS</h4>
+                        <p><b>Descripción: </b>Esta API nos ayudará a ver qué bancos son aceptados para retiros</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--4---API-DE-BLOQUEO POR VISA------------------------------>
+                    <div id="api-4" class="seccapi">
+                        <h4 class="text-center">API de BLOQUEO POR VISA</h4>
+                        <p><b>Descripción: </b>Nos servirá para ver si un usuario está bloqueado para recibir pagos con visa para cobrar por cualquier medio de MP como el Point o desde su cuenta.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--5---API-DE-CAMPAÑA COMERCIAL----------------------------->
+                    <div id="api-5" class="seccapi">
+                        <h4 class="text-center">API de CAMPAÑA COMERCIAL</h4>
+                        <p><b>Descripción: </b>Permite ver el nombre de la campaña en la cual está el producto. La Api solo mostraría aquellas campañas de publicidad que se dan de manera masiva por ejemplo: Black Friday Precio con descuento. Black Week Las
+                            demás campañas que se dan por invitación directamente en la APP de ML ofreciendo en una publicación específica NO registraría.
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--6---API-DE-CARRITO PAQUETES EN UNA MISMA ETIQUETA-------->
+                    <div id="api-6" class="seccapi">
+                        <h4 class="text-center">API de CARRITO PAQUETES EN UNA MISMA ETIQUETA</h4>
+                        <p><b>Descripción: </b>"Se puede ver si el user ""Seller"" decidió que va a querer enviar varios productos en un mismo paquete o no.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--7---API-DE-CATEGORÍAS------------------------------------>
+                    <div id="api-7" class="seccapi">
+                        <h4 class="text-center">API de CATEGORÍAS</h4>
+                        <p><b>Descripción: </b>"Nos mostrará información sobre la composición de la categoría y de las categorías hijas. También el límite de fotos para esa categoría, las formas de envío (Shipping_modes). "
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--8---API-DE-CODIGO POSTAL DE MLM-------------------------->
+                    <div id="api-8" class="seccapi">
+                        <h4 class="text-center">API de CODIGO POSTAL DE MLM</h4>
+                        <p><b>Descripción: </b>Acá podremos saber si el código postal está activo </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--9---API-DE-COSTOS DE ENVÍO------------------------------->
+                    <div id="api-9" class="seccapi">
+                        <h4 class="text-center">API de COSTOS DE ENVÍO</h4>
+                        <p><b>Descripción: </b>Sirve para consultas sobre los cambios en los costos de envío con base en las dimensiones del paquete, sirve para ordenes de ALL SITES y para todo tipo de paquetes, incluye carrito</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--10--API-DE-CREDIT LEVEL---------------------------------->
+                    <div id="api-10" class="seccapi">
+                        <h4 class=text-center>API de CREDIT LEVEL</h4>
+                        <p><b>Descripción: </b>"Sirve para ver cual es el límite de crédito permitido para cada nivel de crédito, por ejemplo, MLA1 MLA2, MLA3 etc. Debemos ver la sección de default_limit, el cual es el límte de crédito permtido para esa
+                            categoría"
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--11--API-DE-CUANTAS OFERTAS TIENE UNA SUBASTA------------->
+                    <div id="api-11" class="seccapi">
+                        <h4 class=text-center>API de CUANTAS OFERTAS TIENE UNA SUBASTA</h4>
+                        <p><b>Descripción: </b>Muchas veces el usuario se contacta diciendo que no ve todas sus ofertas en su subasta o preguntando cuantas ofertas tiene.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--12--API-DE-ESHOP----------------------------------------->
+                    <div id="api-12" class="seccapi">
+                        <h4 class=text-center>API de ESHOP</h4>
+                        <p><b>Descripción: </b>En esta API podremos ver cuando se activó un E-shop </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--13--API-DE-ETIQUETA ML----------------------------------->
+                    <div id="api-13" class="seccapi">
+                        <h4 class=text-center>API de ETIQUETA ML</h4>
+                        <p><b>Descripción: </b>Nos permite validar una etiqueta generada a un seller sin necesidad de darle Click en "Imprimir etiqueta" y de esta manera no generar afectación sobre la cuenta.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--14--API-DE-FORMAS DE ENVÍO POR SITE---------------------->
+                    <div id="api-14" class="seccapi">
+                        <h4 class=text-center>API de FORMAS DE ENVÍO POR SITE</h4>
+                        <p><b>Descripción: </b>Muestra los distintos shippings habilitados en el site</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--15--API-DE-ITEM EN B=P----------------------------------->
+                    <div id="api-15" class="seccapi">
+                        <h4 class=text-center>API de ITEM EN B=P</h4>
+                        <p><b>Descripción: </b>Esta API nos servirá en caso de que nos consulten si el ITEM tiene B=P</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--16--API-DE-ÍTEMS----------------------------------------->
+                    <div id="api-16" class="seccapi">
+                        <h4 class=text-center>API de ÍTEMS</h4>
+                        <p><b>Descripción: </b>Esta API permite ver si un producto está en campaña comercial, ver el tamaño de las fotos que tiene cargadas, así como las dimensiones del producto (PARA LOS COSTOS DE ENVÍO) además tene toda la información
+                            del ítem como tal
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--17--API-DE-LIBERACIÓN DE DINERO-------------------------->
+                    <div id="api-17" class="seccapi">
+                        <h4 class=text-center>API de LIBERACIÓN DE DINERO</h4>
+                        <p><b>Descripción: </b>Visualiza la fecha cuando se va disponibilizar un dinero por "Date released"</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--18--API-DE-LIMITE MP POINT------------------------------->
+                    <div id="api-18" class="seccapi">
+                        <h4 class=text-center>API de LIMITE MP POINT</h4>
+                        <p><b>Descripción: </b>Nos permite consultar el límite de cobros que tiene con el lector</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--19--API-DE-MEDIACIONES----------------------------------->
+                    <div id="api-19" class="seccapi">
+                        <h4 class=text-center>API de MEDIACIONES</h4>
+                        <p><b>Descripción: </b>Sirve para saber el número y porcentaje de ventas con mediación de un usuario</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--20--API-DE-MEDIOS DE PAGO ACEPTADOS POR SITE------------->
+                    <div id="api-20" class="seccapi">
+                        <h4 class=text-center>API de MEDIOS DE PAGO ACEPTADOS POR SITE</h4>
+                        <p><b>Descripción: </b>Podemos ver qué medios de pago son aceptados por cada site</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--21--API-DE-MÉTODOS ACEPTADOS DE PAGO--------------------->
+                    <div id="api-21" class="seccapi">
+                        <h4 class=text-center>API de MÉTODOS ACEPTADOS DE PAGO</h4>
+                        <p><b>Descripción: </b>Podemos ver qué medios de pago son aceptados por cada site</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--22--API-DE-MONTOS MÍNIMOS Y MÁXIMOS POR MEDIO DE PAGO---->
+                    <div id="api-22" class="seccapi">
+                        <h4 class=text-center>API de MONTOS MÍNIMOS Y MÁXIMOS POR MEDIO DE PAGO</h4>
+                        <p><b>Descripción: </b>Muestra Los límites de Cobro por medio de pago.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--23--API-DE-OPERACIONES A LIBERAR------------------------->
+                    <div id="api-23" class="seccapi">
+                        <h4 class=text-center>API de OPERACIONES A LIBERAR</h4>
+                        <p><b>Descripción: </b>En esta api podemos ver qué operaciones componen el no disponible de su cuenta de Mercado Pago.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--24--API-DE-OPERACIONES RETENIDAS POR CHARGEBACKS--------->
+                    <div id="api-24" class="seccapi">
+                        <h4 class=text-center>API de OPERACIONES RETENIDAS POR CHARGEBACKS</h4>
+                        <p><b>Descripción: </b>Podremos saber qué operaciones están retenidas por contracargos</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--25--API-DE-OPERACIONES RETENIDAS POR DEVOLUCIÓN EXPRESS-->
+                    <div id="api-25" class="seccapi">
+                        <h4 class=text-center>API de OPERACIONES RETENIDAS POR DEVOLUCIÓN EXPRESS</h4>
+                        <p><b>Descripción: </b>Podremos saber qué operaciones están retenidas por devoluciones express</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--26--API-DE-OPINIONES------------------------------------->
+                    <div id="api-26" class="seccapi">
+                        <h4 class=text-center>API de OPINIONES</h4>
+                        <p><b>Descripción: </b>Permite saber si un Item tiene opiniones compartidas con las de otros vendedores, S​i el ítem en cuestión ​​tiene un catalog_product_id ​quiere decir que está dentro del catálogo y ​debería compartir sus ​opiniones
+                            con otros ítems ​del mismo producto.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--27--API-DE-ORDERS---------------------------------------->
+                    <div id="api-27" class="seccapi">
+                        <h4 class=text-center>API de ORDERS</h4>
+                        <p><b>Descripción: </b>"En esta API, podemos consultar todo lo referente a una order, por ejemplo, la fecha de creación de la order, si tiene calificación y si esta está oculta o no. Detalles del envío por ejemplo, si es a acordar
+                            o tiene ME2, tiene los datos del comprador y del vendedor. Información del pago, medio de pago usado, valor total y valor unitario (va a ser útil en las ventas de carrito). También podremos ver si esa order tiene alguna mediación
+                            en “Mediations” y ver el estado de la misma. "
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--28--API-DE-PREGUNTAS REALIZADAS EN EL ÍTEM--------------->
+                    <div id="api-28" class="seccapi">
+                        <h4 class=text-center>API de PREGUNTAS REALIZADAS EN EL ÍTEM</h4>
+                        <p><b>Descripción: </b>Mostrará todas las preguntas realizadas en un ítem</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--29--API-DE-PREGUNTAS SIN RESPONDER----------------------->
+                    <div id="api-29" class="seccapi">
+                        <h4 class=text-center>API de PREGUNTAS SIN RESPONDER</h4>
+                        <p><b>Descripción: </b>En esta APi veremos las preguntas sin responder de una publicación</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--30--API-DE-TITULARIDAD DE POINT-------------------------->
+                    <div id="api-30" class="seccapi">
+                        <div class="card text-left">
+                            <img class="card-img-top" src="holder.js/100px180/" alt="">
+                            <div class="card-body">
+                                <p class="card-title">Api de Titularidad Point</p>
+                                <p class="card-text">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" name="serialpoint" id="serialpoint" placeholder="Ingresa Serial del Point">
+                                    </div>
+                                    <button type="button" id="ejapi-30" class="btn btn-success btn-sm" onclick="buscarPoint()">Ejecutar API</button></p>
+                                <h3 id="resultado-point">Resultado:</h3>
+                                <div class="descripcion">
+                                    <div class="descripcion-inn">
+                                        <a href="#" class="accordion-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                                        <div class="description-content">
+                                            <p><b>Funcionamiento:</b>Para ejecutar el API debes ingresar el <b>Client ID</b>, lo obtienes desde: ZEUS > Items</p>
+                                            <p><b>Descripción:</b>Esta API identifica si un cambio dentro de una publicación fue realizada por el user o por una aplicación externa, además de identificar desde dónde fue realizado el cambio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--31--API-DE-USUARIO CONFIABLE----------------------------->
+                    <div id="api-31" class="seccapi">
+                        <h4 class=text-center>API de USUARIO CONFIABLE</h4>
+                        <p><b>Descripción: </b>Podremos ver si un usuario es confiable para poder enviar artículos frágiles a través de Mercado Envíos.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--32--API-DE-VALIDACIÓN CÓDIGO UNIVERSAL DE PRODUCTO------->
+                    <div id="api-32" class="seccapi">
+                        <h4 class=text-center>API de VALIDACIÓN CÓDIGO UNIVERSAL DE PRODUCTO</h4>
+                        <p><b>Descripción: </b>Con esta Api vamos a poder verificar de inmediato si el código universal es válido o no.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-meli">
+        <div class="container-fluid">
+            <p class="text-center"><small>CX Mercado Libre. <i class="far fa-copyright" aria-hidden="true"></i></small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+</div>
+</div>

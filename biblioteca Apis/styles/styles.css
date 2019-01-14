@@ -1,0 +1,61 @@
+/*************************
+*    Guía de Estilos     *
+*      Meli Apis         *
+*        2018            *
+**************************
+índice:
+Paleta de Colores: 
+Amarillo Mercado Libre: FFE82C
+Azul: 06326B
+1- Fondo
+2- Botones
+
+Autor: Nicolás Ayala Rivas 
+Chat Mercado Libre Colombia. 
+
+**************************/
+
+
+/*Oculta la sección de Apis*/
+
+body {
+    background-color: darkgrey;
+}
+
+.extend {
+    width: 200px;
+    overflow: hidden;
+    background-color: #FFE82C;
+}
+
+.seccapi {
+    display: none;
+}
+
+
+/*Muestra el API elegido*/
+
+.visible {
+    display: block;
+}
+
+.description-content {
+    display: none;
+}
+
+.descripcion {
+    text-align: right;
+}
+
+.descripcion-inn {
+    text-align: justify;
+}
+
+.footer-meli {
+    background-color: #FFE82C;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: midnightblue;
+}
