@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Apis Mercado Libre</title>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript" src="JS/visual_option.js"></script>
+    <script type="text/javascript" src="JS/background.js"></script>
+    <!-- Popper.js & Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--CSS Local-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-lg-7 navbar-dark" style="background-color: #FFE82C;">
+            <h6 class="text-center"><i class="fas fa-book"></i> Biblioteca de API'S| MercadoLibre Vendedor</h6>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <div class="row justify-content-md-center">
+            <div class="col-md-7">
+                <br>
+                <h6 class="text-center"><i class="fa fa-star" aria-hidden="true"></i> Top Herramientas de Verificación</h6>
+                <br>
+                <!--Listado de Selección de APIS-->
+                <div class="form-group">
+                    <label for="Selecciona el API"></label>
+                    <select class="form-control" name="apis" id="apis">
+                            <option value="api-1">APLICACIONES</option>
+                            <option value="api-5">CAMPAÑA COMERCIAL</option>
+                            <option value="api-7">CATEGORÍAS</option>
+                            <option value="api-10">CREDIT LEVEL</option>
+                            <option value="api-12">ESHOP</option>
+                            <option value="api-15">ITEM EN B=P</option>
+                            <option value="api-16">ÍTEMS</option>
+                            <option value="api-26">OPINIONES</option>
+                            <option value="api-27">ORDERS</option>
+                            <option value="api-28">PREGUNTAS REALIZADAS EN EL ÍTEM</option>
+                            <option value="api-29">PREGUNTAS SIN RESPONDER</option>
+                    </select>
+                </div>
+                <!--Contenedor de selector de apis-->
+                <div id="seleccapis">
+                    <!--1---API-DE-APLICACIONES---------------------------------->
+                    <div id="api-1" class="seccapi">
+                        <div class="card text-left">
+                            <img class="card-img-top" src="holder.js/100px180/" alt="">
+                            <div class="card-body">
+                                <p class="card-title">Api de Aplicaciones</p>
+                                <p class="card-text">
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" name="clientid" id="clientid" placeholder="Ingresa Client ID">
+                                    </div>
+                                    <button type="button" id="ejapi-1" class="btn btn-success btn-sm">Ejecutar API</button></p>
+                                <div class="descripcion">
+                                    <div class="descripcion-inn">
+                                        <a href="#" class="accordion-toggle"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                                        <div class="description-content">
+                                            <p><b>Funcionamiento:</b>Para ejecutar el API debes ingresar el <b>Client ID</b>, lo obtienes desde: ZEUS > Items</p>
+                                            <p><b>Descripción:</b>Esta API identifica si un cambio dentro de una publicación fue realizada por el user o por una aplicación externa, además de identificar desde dónde fue realizado el cambio.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                    <!--5---API-DE-CAMPAÑA COMERCIAL----------------------------->
+                    <div id="api-5" class="seccapi">
+                        <h4 class="text-center">API de CAMPAÑA COMERCIAL</h4>
+                        <p><b>Descripción: </b>Permite ver el nombre de la campaña en la cual está el producto. La Api solo mostraría aquellas campañas de publicidad que se dan de manera masiva por ejemplo: Black Friday Precio con descuento. Black Week Las
+                            demás campañas que se dan por invitación directamente en la APP de ML ofreciendo en una publicación específica NO registraría.
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--7---API-DE-CATEGORÍAS------------------------------------>
+                    <div id="api-7" class="seccapi">
+                        <h4 class="text-center">API de CATEGORÍAS</h4>
+                        <p><b>Descripción: </b>"Nos mostrará información sobre la composición de la categoría y de las categorías hijas. También el límite de fotos para esa categoría, las formas de envío (Shipping_modes). "
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+
+                    <!--12--API-DE-ESHOP----------------------------------------->
+                    <div id="api-12" class="seccapi">
+                        <h4 class=text-center>API de ESHOP</h4>
+                        <p><b>Descripción: </b>En esta API podremos ver cuando se activó un E-shop </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--15--API-DE-ITEM EN B=P----------------------------------->
+                    <div id="api-15" class="seccapi">
+                        <h4 class=text-center>API de ITEM EN B=P</h4>
+                        <p><b>Descripción: </b>Esta API nos servirá en caso de que nos consulten si el ITEM tiene B=P</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--16--API-DE-ÍTEMS----------------------------------------->
+                    <div id="api-16" class="seccapi">
+                        <h4 class=text-center>API de ÍTEMS</h4>
+                        <p><b>Descripción: </b>Esta API permite ver si un producto está en campaña comercial, ver el tamaño de las fotos que tiene cargadas, así como las dimensiones del producto (PARA LOS COSTOS DE ENVÍO) además tene toda la información
+                            del ítem como tal
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--26--API-DE-OPINIONES------------------------------------->
+                    <div id="api-26" class="seccapi">
+                        <h4 class=text-center>API de OPINIONES</h4>
+                        <p><b>Descripción: </b>Permite saber si un Item tiene opiniones compartidas con las de otros vendedores, S​i el ítem en cuestión ​​tiene un catalog_product_id ​quiere decir que está dentro del catálogo y ​debería compartir sus ​opiniones
+                            con otros ítems ​del mismo producto.</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--27--API-DE-ORDERS---------------------------------------->
+                    <div id="api-27" class="seccapi">
+                        <h4 class=text-center>API de ORDERS</h4>
+                        <p><b>Descripción: </b>"En esta API, podemos consultar todo lo referente a una order, por ejemplo, la fecha de creación de la order, si tiene calificación y si esta está oculta o no. Detalles del envío por ejemplo, si es a acordar
+                            o tiene ME2, tiene los datos del comprador y del vendedor. Información del pago, medio de pago usado, valor total y valor unitario (va a ser útil en las ventas de carrito). También podremos ver si esa order tiene alguna mediación
+                            en “Mediations” y ver el estado de la misma. "
+                        </p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--28--API-DE-PREGUNTAS REALIZADAS EN EL ÍTEM--------------->
+                    <div id="api-28" class="seccapi">
+                        <h4 class=text-center>API de PREGUNTAS REALIZADAS EN EL ÍTEM</h4>
+                        <p><b>Descripción: </b>Mostrará todas las preguntas realizadas en un ítem</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                    <!--29--API-DE-PREGUNTAS SIN RESPONDER----------------------->
+                    <div id="api-29" class="seccapi">
+                        <h4 class=text-center>API de PREGUNTAS SIN RESPONDER</h4>
+                        <p><b>Descripción: </b>En esta APi veremos las preguntas sin responder de una publicación</p>
+                        <br>
+                        <p><b>Funcionamiento:</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-container">
+        <nav class="menu">
+            <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+            <label class="menu-open-button" for="menu-open">
+                        <span class="lines line-1"></span>
+                        <span class="lines line-2"></span>
+                        <span class="lines line-3"></span>
+                      </label>
+            <a href="api_ml.html" class="menu-item purple"> <img src="Images/Vendedor.png" width="100%"> </a>
+            <a href="api_ms.html" class="menu-item blue"> <img src="Images/Mercado Shops.png" width="100%"> </a>
+            <a href="api_me.html" class="menu-item lightblue"> <img src="Images/Mercado Envíos.png" width="100%"></a>
+            <a href="api_mp.html" class="menu-item orange"> <img src="Images/Mercado Pago.png" width="100%"> </a>
+
+        </nav>
+    </div>
+    <footer class="footer-meli">
+        <div class="container-fluid">
+            <p class="text-center"><small>CX Mercado Libre. <i class="far fa-copyright" aria-hidden="true"></i></small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+</div>
+</div>

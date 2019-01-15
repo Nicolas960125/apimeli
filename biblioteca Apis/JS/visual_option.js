@@ -1154,7 +1154,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chrome.tabs.getSelected(null, function(tab) {
             d = document
             var f = d.createElement('a');
-            f.onclick = window.open('api_ml.html', '_blank', 'width=300,height=900', 'titlebar=no', 'status=no', 'location=no', 'left=100', );
+            f.onclick = window.open('api_app.html', '_blank', 'width=400,height=900', 'titlebar=no', 'status=no', 'location=no', 'left=100', );
             f.href = "#"
             d.body.appendChild(f);
         });
@@ -1174,29 +1174,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, false);
 }, false);
-
-//Asigno el evento "click" del botón para provoar el copiado
-document.getElementById('btnCopiar').addEventListener('click', copiarAlPortapapeles);
-
-//Función que lanza el copiado del código
-function copiarAlPortapapeles(ev) {
-    var codigoACopiar = document.getElementById('textoACopiar'); //Elemento a copiar
-    //Debe estar seleccionado en la página para que surta efecto, así que...
-    var seleccion = document.createRange(); //Creo una nueva selección vacía
-    seleccion.selectNodeContents(codigoACopiar); //incluyo el nodo en la selección
-    //Antes de añadir el intervalo de selección a la selección actual, elimino otros que pudieran existir (sino no funciona en Edge)
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(seleccion); //Y la añado a lo seleccionado actualmente
-    try {
-        var res = document.execCommand('copy'); //Intento el copiado
-        if (res)
-            exito();
-        else
-            fracaso();
-
-        mostrarAlerta();
-    } catch (ex) {
-        excepcion();
-    }
-    window.getSelection().removeRange(seleccion);
-}
